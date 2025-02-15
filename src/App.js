@@ -1,5 +1,7 @@
 import './App.css';
-import HookCallbackRef from './chap07/HookCallbackRef';
+// import HookReducerUp from './chap07/HookReducerUp';
+// import HookReducer from './chap07/HookReducer';
+// import HookCallbackRef from './chap07/HookCallbackRef';
 // import HookRefForward from './chap07/HookRefForward';
 // import HookRef from './chap07/HookRef';
 // import HookRefNg from './chap07/HookRefNg';
@@ -12,7 +14,9 @@ function App() {
       {/* <HookRefNg /> */}
       {/* <HookRef /> */}
       {/* <HookRefForward /> */}
-      <HookCallbackRef />
+      {/* <HookCallbackRef /> */}
+      {/* <HookReducer init={0} /> */}
+      {/* <HookReducerUp init={0}/> */}
     </>
   );
 }
