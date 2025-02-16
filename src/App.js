@@ -1,4 +1,5 @@
 import './App.css';
+import HookContext from './chap07/HookContext';
 // import HookReducerUp from './chap07/HookReducerUp';
 // import HookReducer from './chap07/HookReducer';
 // import HookCallbackRef from './chap07/HookCallbackRef';
@@ -17,6 +18,7 @@ function App() {
       {/* <HookCallbackRef /> */}
       {/* <HookReducer init={0} /> */}
       {/* <HookReducerUp init={0}/> */}
+      <HookContext />
     </>
   );
 }
