@@ -1,6 +1,8 @@
+import { RecoilRoot } from 'recoil';
 import './App.css';
-import MyThemeProvider from './chap07/MyThemeProvider';
-import HookThemeButton from './chap07/HookThemeButton';
+// import MyThemeProvider from './chap07/MyThemeProvider';
+// import HookThemeButton from './chap07/HookThemeButton';
+import RecoilCounter from './chap07/RecoilCounter';
 // import HookContext from './chap07/HookContext';
 // import HookReducerUp from './chap07/HookReducerUp';
 // import HookReducer from './chap07/HookReducer';
@@ -21,9 +23,12 @@ function App() {
       {/* <HookReducer init={0} /> */}
       {/* <HookReducerUp init={0}/> */}
       {/* <HookContext /> */}
-      <MyThemeProvider>
+      {/* <MyThemeProvider>
         <HookThemeButton />
-      </MyThemeProvider>
+      </MyThemeProvider> */}
+      <RecoilRoot>
+        <RecoilCounter />
+      </RecoilRoot>
     </>
   );
 }
