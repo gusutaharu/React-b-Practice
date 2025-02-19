@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { MyButton, MyCounter } from './HookMemoChild';
 
 //引数delayだけ処理を休止するコード
@@ -19,17 +19,17 @@ const HookMemo = () => {
     setCount2(c => c - 1);
   }
 //count1に100を加えた値を算出するコード(ダミーの重い処理)
-  const heavyProcess= () => {
+  const heavyProcess = useMemo(() => {
     sleep(1000);
     return count1 + 100;
-  };
+  }, [count1]);
 
   return (
     <>
       <div>
         <MyButton id="btn1" handleClick={increment}>カウントアップ</MyButton>
         <MyCounter id="c1" value={count1} />/
-        {heavyProcess()}
+        {heavyProcess}
       </div>
       <div>
         <MyButton id="btn2" handleClick={decrement}>カウントダウン</MyButton>
