@@ -4,15 +4,17 @@ import { createBrowserRouter, createRoutesFromElements, Route } from 'react-rout
 import ToPage from './ToPage';
 import ArticlePage from './ArticlePage';
 import AboutPage from './AboutPage';
-// import RouterApp from './RouterApp';
-import RouterNav from './RouterNav';
+import RouterApp from './RouterApp';
+import InfoPage from './InfoPage';
+// import RouterNav from './RouterNav';
 
 
 const routesLink = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RouterNav />}>
+    <Route path='/' element={<RouterApp />}>
       <Route path='' element={<ToPage />} />
       <Route path='article' element={<ArticlePage />} />
+      <Route path='article/info' element={<InfoPage />} />
       <Route path='about' element={<AboutPage />} />
     </Route>
   )
