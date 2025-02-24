@@ -1,7 +1,8 @@
 // import { RecoilRoot } from 'recoil';
 import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import routesLink from './chap08/routesLink';
+// import routesLink from './chap08/routesLink';
+import routesParam from './chap08/routesParam';
 // import HookMemo from './chap07/HookMemo';
 // import HookReducerUp from './chap07/HookReducerUp';
 // import HookReducer from './chap07/HookReducer';
@@ -29,7 +30,7 @@ function App() {
         <RecoilCounter />
       </RecoilRoot> */}
       {/* <HookMemo /> */}
-      <RouterProvider router={routesLink} />
+      <RouterProvider router={routesParam} />
     </>
   );
 }
