@@ -12,6 +12,7 @@ const RouterParam = () => {
         改訂3版 JavaScript本格入門</NavLink></li>
         <li><NavLink to="/book" end>規定の書籍</NavLink></li>
         <li><NavLink to="/search/react/router/remix">検索結果</NavLink></li>
+        <li><NavLink to="/nothing/foo/bar">存在しないページ</NavLink></li>
       </ul>
       <hr />
       <Outlet />
