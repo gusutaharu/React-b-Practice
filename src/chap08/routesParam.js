@@ -6,6 +6,7 @@ import BookPage from './BookPage'
 import SearchPage from './SearchPage'
 import NotFoundPage from './NotFoundPage'
 import BookQueryPage from './BookQueryPage'
+import BookStatePage from './BookStatePage'
 
 const routesParam = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +14,7 @@ const routesParam = createBrowserRouter(
       <Route path='/' element={<ToPage />} />
       <Route path='/book/:isbn?' element={<BookPage />} />
       <Route path='/bookQuery' element={<BookQueryPage />} />
+      <Route path='/bookState' element={<BookStatePage />} />
       <Route path='/search/*' element={<SearchPage />}/>
       <Route path='*' element={<NotFoundPage />} />
     </Route>
