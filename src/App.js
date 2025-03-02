@@ -4,6 +4,8 @@ import './App.css';
 // import routesLink from './chap08/routesLink';
 import routesParam from './chap08/routesParam';
 import StateBasic from './chap03/StateBasic';
+import ForNest from './chap03/ForNest';
+import books from './chap03/books';
 // import HookMemo from './chap07/HookMemo';
 // import HookReducerUp from './chap07/HookReducerUp';
 // import HookReducer from './chap07/HookReducer';
@@ -32,7 +34,8 @@ function App() {
       </RecoilRoot> */}
       {/* <HookMemo /> */}
       {/* <RouterProvider router={routesParam} /> */}
-      <StateBasic init={0}/>
+      {/* <StateBasic init={0}/> */}
+      <ForNest src={books} />
     </>
   );
 }
