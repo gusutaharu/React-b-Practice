@@ -2,12 +2,13 @@ import { act, render, screen } from "@testing-library/react";
 import HookTimer from "../chap07/HookTimer";
 
 describe('HookTimer', () => {
-  //テスト前に擬似タイマーを有効化
+    //テスト前に擬似タイマーを有効化
   beforeEach(() => {
     jest.useFakeTimers();
   });
   
   afterEach(() => {
+    //テスト後に擬似タイマーを無効化
     jest.useRealTimers();
   });
 
