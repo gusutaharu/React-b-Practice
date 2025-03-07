@@ -36,13 +36,13 @@ function App() {
         <RecoilCounter />
       </RecoilRoot> */}
       {/* <HookMemo /> */}
-      {/* <RouterProvider router={routesParam} /> */}
+      <RouterProvider router={routesParam} />
       {/* <StateBasic init={0}/> */}
       {/* <ForNest src={books} /> */}
       {/* <HookTimer init={0} /> */}
-      <MyThemeProvider>
+      {/* <MyThemeProvider>
         <HookThemeButton />
-      </MyThemeProvider>
+      </MyThemeProvider> */}
     </>
   );
 }

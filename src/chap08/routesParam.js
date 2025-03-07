@@ -19,9 +19,9 @@ const routesParam = createBrowserRouter(
       <Route path='/bookQuery' element={<BookQueryPage />} />
       <Route path='/bookState' element={<BookStatePage />} />
       <Route path='/search/*' element={<SearchPage />}/>
-      <Route path='/weather/:city' element={<WeatherPage />}
+      {/* <Route path='/weather/:city' element={<WeatherPage />}
         loader={({ params }) => fetch(`https://api.openweathermap.org/data/2.5/weather?q=${params.city}&lang=ja&appid=xxxxxxxxxx`)}
-      />
+      /> */}
       <Route path='*' element={<NotFoundPage />} />
     </Route>
   )
